@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: fixed;
+    background-color: cadetblue;
+}
+
+.header-container {
+    position: relative;
+}
+
+.burger-button {
+    position: absolute;
+    right: 1vw;
+}
+
+.logo {
+    width: 15%;
+    max-width: 125px;
+}
+
+.top-nav {
+    background-color: cadetblue;
+    text-align: center;
+    transition: display 1s;
+}
+.top-nav ul {
+    margin: 0;
+    padding: 1em 0;
+    list-style: none;
+}
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+.top-nav a:hover {
+    background-color: rgb(113, 189, 192);
+}
+
+/* .containder {
+
+} */
+
+.article-image {
+    width: 100%;
+}
