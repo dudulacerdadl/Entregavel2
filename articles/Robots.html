@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../utils/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html"><img src="../utils/images/logo.png" alt="Logo" class="logo"></a>
+            <img src="../utils/images/icons/burger-menu.png" alt="" class="burger-button">
+        </div>
+
+        <nav class="top-nav">
+            <ul>
+                <!-- <li>Artigos:
+                        <ul></ul>
+                    </li> -->
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../Sobre.html">Sobre</a></li>
+                <li><a href="../Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mask"></div>
+    <div class="container">
+        <main>
+            <h1 class="article-title">Robots</h1>
+            <p><img src="../utils/images/art-1.jpg" alt="Codigos" class="article-image"></p>
+            <p class="article-text">Os Robots são programas automatizados que buscam documentos em páginas Web, a fim de indexá-los. Para controlar esses documentos durante a busca, é criado um arquivo chamado robots.txt, que é usado como filtro para os motores de busca, permitindo
+                ou bloqueando o acesso a partes determinadas de um site. Esses arquivos são colocados no diretório raiz do endereço web.</p>
+            <p class="article-text">O Google, porém, adverte que esse recurso não funciona como um mecanismo para manter uma página da Web fora dos resultados da pesquisa do Google. Para fazer isso, bloqueie a indexação com NOINDEX ou proteja a página com uma senha.</p>
+            <p class="article-text">O parâmetro NOINDEX diz ao robô que o conteúdo daquele site não deve ser indexado e NOFOLLOW indica que os possíveis links ali existentes não devem ser analisados.</p>
+            <p class="article-text">Ao visitar um site, os robôs buscam primeiro pelo arquivo robots.txt. Se o conteúdo deste arquivo listar algo conforme segue:</p>
+            <code>
+                User-agent: *<br>
+                Disallow: /               
+            </code>
+            <p class="article-text">então o robô saberá que deve deixar o local sem buscar por nada ali. Outra maneira de se conseguir algo semelhante é através de Meta Tags, colocadas estrategicamente nos cabeçalhos de páginas HTML:</p>
+            <code>&lt;META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW"></code>
+            <p class="article-text">O Google disponibiliza em sua central de desenvolvedores, uma documentação ampla para criação de robots, podendo ser acessada pelo link: <a href="https://developers.google.com/search/docs/advanced/robots/create-robots-txt?hl=pt-br" target="_blank"
+                    rel="noopener noreferrer">Criar e enviar um arquivo robots.txt</a></p>
+            <p class="article-text">Mesmo criando corretamente um robot, ainda há algumas limitações que podem fazer com que a criação dele não seja o ideal para sua página web, tento de analisar se essa seria realmente a melhor opção. Algumas dessas limitações são que:</p>
+            <ul>
+                <li class="article-text article-list">As diretivas do arquivo robots.txt podem não ser compatíveis com todos os mecanismos de pesquisa</li>
+                <li class="article-text article-list">Rastreadores diferentes interpretam a sintaxe de maneiras distintas</li>
+                <li class="article-text article-list">Uma página não permitida no arquivo robots.txt ainda poderá ser indexada se estiver vinculada a outros sites</li>
+            </ul>
+            <p class="article-text">Se o robô não encontrar o arquivo robots.txt e não houver nenhuma Meta Tag que o proíba formalmente de analisar um site, a decisão sobre o que fazer passa a ser do próprio robô. Dependendo do site de busca ao qual ele pertence, ele poderá
+                ou não prosseguir com a busca. A maioria optará por prosseguir.</p>
+        </main>
+
+        <aside>
+            <h3 class="aside-title">Leia mais:</h3>
+
+            <ul class="aside-container">
+                <li class="aside-card">
+                    <a href="#">
+                        <img src="../utils/images/art-1.jpg" alt="" class="aside-img">
+                        <p class="aside-txt">Robots</p>
+                    </a>
+                </li>
+                <li class="aside-card">
+                    <a href="Lei-Geral-de-Protecao-de-Dados.html">
+                        <img src="../utils/images/art-2.jpg" alt="" class="aside-img">
+                        <p class="aside-txt">Lei Geral de Proteção de Dados (LGPD)</p>
+                    </a>
+                </li>
+                <li class="aside-card">
+                    <a href="Conheca-mais-de-HTML.html">
+                        <img src="../utils/images/art-3.jpg" alt="" class="aside-img">
+                        <p class="aside-txt">Conheça mais de HTML</p>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <p>Not Icias ®</p>
+
+        <ul class="redes-sociais">
+            <li>
+                <a href="#"><img src="../utils/images/icons/icon-facebook.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="../utils/images/icons/icon-instagram.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="../utils/images/icons/icon-twitter.png" alt=""></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

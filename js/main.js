@@ -1,17 +1,18 @@
-var body = document.querySelector('body')
-var btn = document.querySelector('.burger-button');
 var nav = document.querySelector('.top-nav');
+var mask = document.querySelector('.mask');
+var btn = document.querySelector('.burger-button');
 
-btn.addEventListener('click', function () {
-    var navDisplay = nav.getAttribute('style');
-
-    if (navDisplay == 'display: none;') {
-        nav.setAttribute('style', 'display: block;');
-        console.log(navDisplay);
-        console.log('Deu if')
-    } else {
-        nav.setAttribute('style', 'display: none;');
-        console.log(navDisplay);
-        console.log('Deu else')
-    }
+btn.addEventListener('click', function() {
+    nav.toggleAttribute('opened');
+    mask.toggleAttribute('opened');
+    teste();
 })
+
+function teste() {
+    window.addEventListener('click', function(e) {
+        if (!nav.contains(e.target.parentNode) && e.target != btn) {
+            nav.removeAttribute('opened');
+            mask.removeAttribute('opened');
+        }
+    })
+}
